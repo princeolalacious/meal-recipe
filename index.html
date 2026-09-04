@@ -1,0 +1,198 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Prince Uduma" />
+  <meta name="description" content="Healthy Meal Recipe" />
+  <title>Healthy Meal Recipe</title>
+  <link rel="shortcut icon" href="Image/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+  />
+
+  <link
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+  rel="stylesheet"
+/>
+
+  <script>
+    document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || "light");
+  </script>
+</head>
+  <body>
+   <header>
+    <nav>
+      <ul>
+        <li> <a href="index.html"><i class="fa-solid fa-kitchen-set"></i> <span class="h-deco">H</span>ealthy Meal</a>
+          
+        </li>
+
+        <li id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></li>
+
+
+        <li><a href="#" class="faq-link">FAQ</a></li>
+        <li><a href="#" class="signup-link">SignUp</a></li>
+        <li class="hideOnMobile"><a href="#">News</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+         <li id="menuBtn" class="menu-toggle"> 
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </li>
+
+      
+      </ul>
+
+       <ul class="sidebar">
+        <li id="hideSidebar"> <i class="fa fa-times" aria-hidden="true"></i></li>
+       <li><a href="#" class="faq-link">FAQ</a></li>
+         <li><a href="#" class="signup-link">SignUp</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">About</a></li>
+       
+     
+      
+      </ul>
+    </nav>
+    </header> 
+
+    <main>
+    <h1>Healthy Meal</h1>
+
+    <div id="container">
+      <div id="heroContainer">
+        <h6 class="h4">KITCHEN INSPIRATION, ONE SEARCH AWAY</h6>
+        <h2 class="h3">Meal Recipe Finder</h2>
+
+        <figure class="image">
+         <img src="Image/yyyyy.png" alt="delicious food tray" loading="lazy" class="sharp">
+         <img src="Image/yyyyy.png" alt="delicious food tray" loading="lazy" class="blurred" aria-hidden="true">
+         <figcaption display: hidden;>DELICIOUS FOOD TRAY</figcaption>
+        </figure>
+        <p class="herotext">
+          Search by dish or ingredient, explore fresh ideas,<br> and bring something
+          wonderful to the table.
+        </p>
+     </div>
+
+      <div id="searchBox" class="search-box">
+        <p class="space">what would you like to make? &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   category filter</p>
+       
+      <input type="text" id="input" class="input"  required placeholder="Try 'chicken', 'Pasta', or 'Tomato'." />
+
+      
+       <button id="searchBtn" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+
+       <button id="categoryBtn"><i class="fa-solid fa-chevron-down"></i>All Categories</button>
+
+       <ul id="categoryList" class="category-list hidden"></ul>
+
+    <button class="randomBtn" id="randomBtn">Suprise me<i class="fa-solid fa-shuffle"></i></button>
+       </div>
+
+      <h5 class="recipe-collection">RECIPE COLLECTION</h5>
+      <p id="owl">Recipes worth making</p>
+
+       <div id="resultsContainer" class="results-grid"></div>
+
+<p id="loadingMsg" class="hidden">Loading recipes...</p>
+<p id="errorMsg" class="hidden">No meals found. Try a different search.</p>
+
+      <div id="what-are-you-hungry-for-box">
+        <i class="fa-solid fa-utensils" ></i>
+        <p>what are you hungry for?</p>
+        <p>Search for a dish, ingredient, or let us choose a recipe for your next kitchen adventure</p>
+
+       
+      </div>
+
+      
+    </div>
+    <p id="resources">Recipe results are powered by TheMealDB.</p>
+    </main>
+
+    <footer>
+      <p>
+        <span class="nowrap">copyright &copy; <time id="year">2026</time></span>
+        <span class="nowrap">Healthy Meal by <i>princeu</i></span>
+      </p>
+    </footer>
+
+  <!--FAQ-->
+<dialog id="faqModal" class="faq-modal">
+  <button id="closeFaq" class="faq-close" aria-label="Close FAQ">&times;</button>
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-question">How do I search for a recipe?<span class="faq-icon">+</span></div>
+      <div class="faq-answer">Type an ingredient or dish name into the search bar — like "chicken" or "pasta" — and we'll pull matching recipes for you.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Is Healthy Meal free to use?<span class="faq-icon">+</span></div>
+      <div class="faq-answer">Yes, browsing and searching recipes is completely free. No account required.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Where do the recipes come from?<span class="faq-icon">+</span></div>
+      <div class="faq-answer">Recipe results are powered by TheMealDB, a public recipe database.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What does "Surprise me" do?<span class="faq-icon">+</span></div>
+      <div class="faq-answer">It picks a random recipe for you — perfect for when you can't decide what to cook.</div>
+    </div>
+  </div>
+</dialog>
+
+
+
+
+<!--SIGN UP FORM-->
+<dialog id="signupModal" class="signup-modal">
+  <button id="closeSignup" class="faq-close" aria-label="Close newsletter signup">&times;</button>
+  <h2 class="faq-title">Stay in the Loop</h2>
+  <p class="signup-subtext">Get fresh recipes and kitchen tips straight to your inbox.</p>
+
+  <form id="signupForm" class="signup-form">
+    <div>
+      <label for="signupName">
+        <span class="material-symbols-outlined">person</span>
+      </label>
+      <input type="text" id="signupName" placeholder="Enter your name" required />
+      <p id="signupNameError" class="hidden">Name is required</p>
+    </div>
+
+    <div>
+      <label for="signupEmail">
+        <span class="material-symbols-outlined">mark_email_read</span>
+      </label>
+      <input type="email" id="signupEmail" placeholder="Enter your email" required />
+      <p id="signupEmailError" class="hidden">A valid email is required</p>
+    </div>
+
+    <button type="submit" id="signupBtn" class="search-btn">Subscribe</button>
+    <p id="signupSuccess" class="hidden">You're subscribed! 🎉</p>
+  </form>
+</dialog>
+
+<dialog id="recipeModal" class="recipe-modal">
+  <button id="closeRecipe" class="faq-close" aria-label="Close recipe">&times;</button>
+  <h2 id="recipeTitle"></h2>
+  <img id="recipeImage" alt="" />
+  <h3>Ingredients</h3>
+  <ul id="recipeIngredients"></ul>
+  <h3>Instructions</h3>
+  <p id="recipeInstructions"></p>
+</dialog>
+
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

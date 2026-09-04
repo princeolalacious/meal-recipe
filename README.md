@@ -2,7 +2,7 @@
 
 A vanilla JavaScript project built to explore and apply core JS concepts in a real, working application — a recipe browser powered by [TheMealDB API](https://www.themealdb.com/api.php).
 
-🔗 **Live demo:** [meal-recipe.vercel.app](#)
+🔗 **Live demo:** [https://healthy-meal-recipe.vercel.app/](#)
 
 ---
 

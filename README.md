@@ -6,9 +6,7 @@ Live demo: https://healthy-meal-recipe.vercel.app/
 
                                        About This Project
 
-This project was built as a hands-on learning exercise in vanilla JavaScript — no frameworks, no libraries, just fundamentals [ making the App to load and function without any delay/hanging and function with less network]. It pulls recipe data from a public API [ MealDB ] and renders it dynamically, while also handling navigation, theme, a FAQ section, and a sign-up form with validation.
-
-<S/N> <javaScript Concept> <Usage>
+This project was built as a hands-on learning exercise in vanilla JavaScript — no frameworks, no libraries, just fundamentals [ making the App to load and function without any delay/hanging and function with less network]. It pulls recipe data from a public API [ MealDB ] and renders it dynamically, while also handling navigation, theme, a FAQ section, and a sign-up form with validation. javaScript concept and usage are as follows:
 
 1. Arrays.............. Storing and mapping over lists of meals/recipes fetched from the API
 2. Functions............. Modular logic split across “main.js”, “mealdb.js”, “nav.js”, “theme.js”, “faq.js”, “signup.js”.
@@ -21,16 +19,17 @@ This project was built as a hands-on learning exercise in vanilla JavaScript —
 7. DOM Manipulation .............Dynamically injecting recipe cards, toggling themes, and controlling the FAQ accordion.
 8. Event Handling ...............Listening for clicks, form submissions, and navigation interactions
 
-<S/N> <Html & CSS Concept> <Usage>
-1 Semantic HTML ...... Structures the app using elements such as header, main, section, article, and footer.
-2 Forms & Inputs ...... Provides the meal search field and user input controls.
-3 Flexbox ............ Arranges navigation, buttons, recipe details, and other UI elements.
-4 CSS Grid ........... Creates the responsive layout for meal/recipe cards.
-5 Responsive Design .... Ensures the app works properly across mobile, tablet, and desktop screens.
-6 CSS Variables ...... Manages reusable colors, spacing, and theme values.
-7 Light & Dark Mode.... Uses CSS variables/classes to switch between light and dark themes.
-8 Cards, Images & Typography..... Presents meal images, ingredients, instructions, and text in a clear visual layout.
-9 Pseudo-classes, Transitions & Animation...... Adds interactive states such as hover/focus and smooth visual effects.
+Html and CSS Concept and usage are as follows:
+
+1. Semantic HTML ...... Structures the app using elements such as header, main, section, article, and footer.
+2. Forms & Inputs ...... Provides the meal search field and user input controls.
+3. Flexbox ............ Arranges navigation, buttons, recipe details, and other UI elements.
+4. CSS Grid ........... Creates the responsive layout for meal/recipe cards.
+5. Responsive Design .... Ensures the app works properly across mobile, tablet, and desktop screens.
+6. CSS Variables ...... Manages reusable colors, spacing, and theme values.
+7. Light & Dark Mode.... Uses CSS variables/classes to switch between light and dark themes.
+8. Cards, Images & Typography..... Presents meal images, ingredients, instructions, and text in a clear visual layout.
+9. Pseudo-classes, Transitions & Animation...... Adds interactive states such as hover/focus and smooth visual effects.
 
 No build tools or dependencies required — it's pure HTML, CSS, and Vanilla JS.
 

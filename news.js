@@ -84,7 +84,7 @@ export function initnews() {
     const card = document.createElement("div");
     card.className = "news-card";
 
-    // Empty card layout first, then we fill in the text safely
+    // Empty card
     card.innerHTML = `
       <div class="news-image-wrapper"><img></div>
       <div class="news-content">

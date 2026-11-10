@@ -39,7 +39,7 @@
 
         <li><a href="#" class="faq-link">FAQ</a></li>
         <li><a href="#" class="signup-link">SignUp</a></li>
-        <li class="hideOnMobile"><a href="#">News</a></li>
+       <li class="hideOnMobile"><a href="#" id="news-link">News</a></li>
         <li class="hideOnMobile"><a href="#">About</a></li>
          <li id="menuBtn" class="menu-toggle"> 
           <i class="fa fa-bars" aria-hidden="true"></i>
@@ -52,7 +52,7 @@
         <li id="hideSidebar"> <i class="fa fa-times" aria-hidden="true"></i></li>
        <li><a href="#" class="faq-link">FAQ</a></li>
          <li><a href="#" class="signup-link">SignUp</a></li>
-        <li><a href="#">News</a></li>
+       <li><a href="#" id="news-link-sidebar">News</a></li>
         <li><a href="#">About</a></li>
        
      
@@ -111,17 +111,10 @@
        
       </div>
 
-      
-    </div>
-    <p id="resources">Recipe results are powered by TheMealDB.</p>
+  
     </main>
 
-    <footer>
-      <p>
-        <span class="nowrap">copyright &copy; <time id="year">2026</time></span>
-        <span class="nowrap">Healthy Meal by <i>princeUduma</i></span>
-      </p>
-    </footer>
+   
 
   <!--FAQ-->
 <dialog id="faqModal" class="faq-modal">
@@ -150,6 +143,90 @@
     </div>
   </div>
 </dialog>
+
+<!-- 
+<!-- News Section --
+<section id="news-section" class="news-section" style="display: none;">
+  <div class="container">
+    <h2>📰 Fresh Culinary News & Trends</h2>
+    <p class="subtitle">Latest updates from top food and recipe blogs.Including <a href="https://www.seriouseats.com/world-cuisine-guides-5117177" class="cuisine">World Cuisines</a> &nbsp; <a href="https://www.seriouseats.com/african-cuisine-guides-5117176"  class="cuisine">Afircan Cuisines</a> &nbsp; <a href="https://www.seriouseats.com/nigerian-cuisine-guides-5117166"  class="cuisine">Nigeria Cuisines</a> </p>
+    
+    <!-- Loading state --
+    <div id="news-loading" class="loading-spinner">Loading latest food stories...</div>
+
+    <!-- Articles Grid 
+    <div id="news-grid" class="news-grid">
+      <!-- Dynamic news cards will be injected here by news.js 
+    </div>
+  </div>
+</section> -->
+
+<!-- News Section -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+
+<section id="news-section" class="news-section" style="display: none;">
+  <div class="container">
+    <h2>📰 Fresh Culinary News & Trends</h2>
+    <p class="subtitle">
+      Latest updates from top food and recipe blogs. Including
+      <a href="https://www.seriouseats.com/world-cuisine-guides-5117177" class="cuisine" target="_blank" rel="noopener noreferrer">World Cuisines</a>
+      &nbsp;
+      <a href="https://www.seriouseats.com/african-cuisine-guides-5117176" class="cuisine" target="_blank" rel="noopener noreferrer">African Cuisines</a>
+      &nbsp;
+      <a href="https://www.seriouseats.com/nigerian-cuisine-guides-5117166" class="cuisine" target="_blank" rel="noopener noreferrer">Nigerian Cuisines</a>
+    </p>
+
+    <!-- Recipe of the Day -->
+    <h3 class="section-title">🍲 Recipe of the Day</h3>
+    <div id="recipe-grid" class="news-grid"></div>
+
+    <!-- News -->
+    <h3 class="section-title">📰 Latest News</h3>
+    <div id="news-loading" class="loading-spinner">Loading latest food stories...</div>
+    <div id="news-grid" class="news-grid"></div>
+  </div>
+</section>
+
+<!-- Popup (modal) -->
+<div id="news-modal" class="news-modal" hidden>
+  <div class="news-modal-box" role="dialog" aria-modal="true">
+    <button id="news-modal-close" class="news-modal-close" aria-label="Close">&times;</button>
+    <div id="news-modal-body"></div>
+  </div>
+</div>
+
+
+<!-- About Section -->
+<section id="about-section" class="about-section" style="display: none;">
+  <div class="container">
+    <h2>About HealthyMeal 🥗</h2>
+    <p class="about-text">
+      HealthyMeal helps you cook simple, nutritious food without the stress.
+      Explore recipes from around the world, including African and Nigerian
+      favourites, and keep up with the latest food news and tips, all in one place.
+    </p>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <span class="about-icon">🍲</span>
+        <h3>Easy Recipes</h3>
+        <p>Step-by-step meals for every day, with clear ingredients.</p>
+      </div>
+
+      <div class="about-card">
+        <span class="about-icon">🌍</span>
+        <h3>World Cuisines</h3>
+        <p>Discover dishes from Nigeria, Africa and beyond.</p>
+      </div>
+
+      <div class="about-card">
+        <span class="about-icon">📰</span>
+        <h3>Fresh Food News</h3>
+        <p>Stay updated on food trends and kitchen tips.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -191,6 +268,17 @@
   <h3>Instructions</h3>
   <p id="recipeInstructions"></p>
 </dialog>
+
+ <footer>
+      
+          <p id="resources">
+            Recipe results are powered by TheMealDB.&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+        <span class="nowrap">Copyright &copy; <time id="year">2026</time></span> &nbsp;
+        <span class="nowrap">Healthy Meal by <i>princeUduma</i></span>
+        </p>
+      
+    </footer>
+
 
 
 

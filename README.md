@@ -70,7 +70,7 @@ No build tools or dependencies required — it's pure HTML, CSS, and Vanilla JS.
 **Installation & Local Setup**
 Clone the repository:
 Bash (Terminal)
-git clone [https://github.com/your-username/healthymeal.git]
+git clone [https://github.com/princeolalacious/healthymeal.git]
 
 Navigate to the project directory:
 Bash (Terminal)
@@ -85,10 +85,6 @@ Recommended: Use the Live Server extension in Visual Studio Code to host and tes
 ## 🌐 API Usage
 
 This application uses the free tier of TheMealDB API for fetching meal data.
-
-## 🌐 Live Deployment
-
-Live demo: https://healthy-meal-recipe.vercel.app
 
 ## What I Learned
 
@@ -110,7 +106,8 @@ Building this project helped me solidify how JavaScript fundamentals connect tog
 
 This project was created for educational purposes as part of my Frontend learning. Distributed under the MIT License.
 
-✍️ Author
+## ✍️ Author
+
 Designed and Created with ❤️ by princeUduma
 
 Copyright © 2026 Healthy Meal.

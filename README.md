@@ -104,7 +104,7 @@ Building this project helped me solidify how JavaScript fundamentals connect tog
 
 ## 📄 License
 
-This project was created for educational purposes as part of my Frontend learning. Distributed under the MIT License.
+project. Distributed under the MIT License.
 
 ## ✍️ Author
 
